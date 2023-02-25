@@ -182,5 +182,29 @@ Elabore:
 Exercício III
 1) Em relação a sintaxe, quais são as variantes na escrita de uma função? Quais são as especificidades e em que caso pode-se utilziar cada uma?
 
+import 'package:dartv/dartv.dart' as dartv;
+import 'dart:io';
+
+
+void main(List<String> arguments) {
+calcularSalario();
+}
+
+ calcularSalario() {
+  double salario, desconto, salarioFinal;
+  print('informe o salario');
+  salario = double.parse(stdin.readLineSync()!);
+
+  print('informe desconto');
+  desconto = double.parse(stdin.readLineSync()!);
+
+  salarioFinal = (salario - desconto);
+
+  
+    print("O salario final é:$salarioFinal");
+  }
+
+
+
 
 
